@@ -51,7 +51,7 @@
 
   --header-primary: #{$text} !important;
   --header-secondary: #{$subtext0} !important;
-  --__header-bar-background: #{$mantle} !important;
+  --__header-bar-background: #00000000 !important;
 
   --text-normal: #{$text} !important; // TODO: LEGACY
   --text-default: #{$text};
@@ -101,11 +101,11 @@
   --background-floating: #{darken($crust, 2%)} !important;
   --background-surface-highest: #{$surface0} !important;
   --background-surface-higher: #{darken($surface0, 3%)} !important;
-  --background-surface-high: #{$base} !important;
+  --background-surface-high: #00000000 !important;
 
-  --background-base-lowest: #{$crust} !important;
-  --background-base-lower: #{$mantle} !important;
-  --background-base-low: #{darken($base, 1%)} !important;
+  --background-base-lowest: #00000000 !important;
+  --background-base-lower: #00000000 !important;
+  --background-base-low: #00000000 !important;
   --background-nested-floating: #{$mantle};
   --background-mobile-primary: #{$base};
   --background-mobile-secondary: #{$mantle};
@@ -136,7 +136,7 @@
   --background-mod-normal: #{adjust-color($surface2, $alpha: -0.85)};
   --background-mod-subtle: #{adjust-color($surface2, $alpha: -0.75)} !important;
   --background-mod-strong: #{adjust-color($surface2, $alpha: -0.55)} !important;
-  --custom-channel-members-bg: #{$mantle};
+  --custom-channel-members-bg: #00000000;
   --custom-status-bubble-background: #{$crust} !important;
   --custom-status-bubble-background-color: #{$mantle} !important;
   --card-primary-bg: #{$surface0} !important;

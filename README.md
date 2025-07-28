@@ -6,9 +6,9 @@
 </h3>
 
 <p align="center">
-    <a href="https://github.com/catppuccin/discord/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/discord?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-    <a href="https://github.com/catppuccin/discord/issues"><img src="https://img.shields.io/github/issues/catppuccin/discord?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-    <a href="https://github.com/catppuccin/discord/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/discord?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+    <a href="https://github.com/anninzy/catppuccin-discord-transparent/stargazers"><img src="https://img.shields.io/github/stars/anninzy/catppuccin-discord-transparent?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+    <a href="https://github.com/anninzy/catppuccin-discord-transparent/issues"><img src="https://img.shields.io/github/issues/anninzy/catppuccin-discord-transparent?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+    <a href="https://github.com/anninzy/catppuccin-discord-transparent/contributors"><img src="https://img.shields.io/github/contributors/anninzy/catppuccin-discord-transparent?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
 ![Discord Theme Preview](assets/preview.webp)
@@ -46,32 +46,34 @@
 2. Copy the downloaded file to your BetterDiscord themes folder.
 3. Enable the theme in BetterDiscord settings.
 
+### [Vencord](https://vencord.dev)
+
+1. Paste the following link into `Settings -> Themes -> Online Themes`
+
+```
+https://anninzy.github.io/catppuccin-discord-transparent/dist/catppuccin-mocha.theme.css
+```
+
 ### Clients/Mods with custom CSS support
 
 1. Simply add your preferred flavour into your discord clients CustomCSS file/editor.
 
 ```css
 /* latte */
-@import url("https://catppuccin.github.io/discord/dist/catppuccin-latte.theme.css");
+@import url("https://anninzy.github.io/catppuccin-discord-transparent/dist/catppuccin-latte.theme.css");
 /* frappe */
-@import url("https://catppuccin.github.io/discord/dist/catppuccin-frappe.theme.css");
+@import url("https://anninzy.github.io/catppuccin-discord-transparent/dist/catppuccin-frappe.theme.css");
 /* macchiato */
-@import url("https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css");
+@import url("https://anninzy.github.io/catppuccin-discord-transparent/dist/catppuccin-macchiato.theme.css");
 /* mocha */
-@import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css");
+@import url("https://anninzy.github.io/catppuccin-discord-transparent/dist/catppuccin-mocha.theme.css");
 
 /* You can also append Catppuccin colors to customize the accent, e.g. */
 /* mocha (pink accent)*/
-@import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha-pink.theme.css");
+@import url("https://anninzy.github.io/catppuccin-discord-transparent/dist/catppuccin-mocha-pink.theme.css");
 /* frappe (maroon accent) */
-@import url("https://catppuccin.github.io/discord/dist/catppuccin-frappe-maroon.theme.css");
+@import url("https://anninzy.github.io/catppuccin-discord-transparent/dist/catppuccin-frappe-maroon.theme.css");
 ```
-
-### [Stylus](https://github.com/openstyles/stylus)
-
-1. Enable CSP Patching from Stylus Settings > Advanced.
-2. [Click here to install](https://github.com/catppuccin/discord/raw/main/discord.user.css).
-3. Choose your preferred flavour and accent color from the Stylus preference dropdown.
 
 ## 🙋 FAQ
 
@@ -82,17 +84,30 @@
 - A: The following snippet showcases a configuration that switches between latte in light mode and mocha in dark mode by adding an inline [`prefers-color-scheme` media feature](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme), `(prefers-color-scheme: <light-or-dark>)`, after each `@import` statement (see ["Importing CSS rules conditional on media queries" - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@import#importing_css_rules_conditional_on_media_queries)).
 
   ```css
-  @import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css")
+  @import url("https://anninzy.github.io/catppuccin-discord-transparent/dist/catppuccin-mocha.theme.css")
   (prefers-color-scheme: dark);
-  @import url("https://catppuccin.github.io/discord/dist/catppuccin-latte.theme.css")
+  @import url("https://anninzy.github.io/catppuccin-discord-transparent/dist/catppuccin-latte.theme.css")
   (prefers-color-scheme: light);
   ```
 
 - Q: **_"Can I disable Rainbow Threads"_**
 - A: Yes, by placing the following in your QuickCSS threads will be the same colour as typical channels. *note: please respect the `space` between the colon and semi-colon*
+
   ```css
   :root {
     --ctp-rainbow-thread-disabled: ;
+  }
+  ```
+
+- Q: **_"Why is it not transparent?"_**
+- A: Remember to enable transparency in the settings. For Vencord, that will be `Settings -> Vencord -> Enable window transparency`.
+
+- Q: **_This doesn't have anything to do with Catppuccin but how do I use system font?_**
+- A: Paste the following into your discord clients CustomCSS file/editor.
+
+  ```css
+  * {
+      font-family: sans !important;
   }
   ```
 

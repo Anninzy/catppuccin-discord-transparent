@@ -1,0 +1,23 @@
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha-rosewater.theme.css");
+
+* {
+  font-family: system-ui !important;
+}
+
+html {
+  background-color: #1e1e2e99 !important;
+}
+
+.visual-refresh.theme-dark, .visual-refresh .theme-dark {
+  --font-primary: system-ui !important;
+  --background-base-lowest: transparent !important;
+  --background-base-lower: transparent !important;
+  --__header-bar-background: transparent !important;
+  --home-background: transparent !important;
+}
+
+.user-profile-sidebar {
+  background-color: transparent !important;
+  background-image: linear-gradient(transparent) !important;
+  --profile-gradient-overlay-color: transparent !important;
+}
